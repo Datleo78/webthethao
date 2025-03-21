@@ -3,31 +3,31 @@ var products = [
     id: 1,
     name: "Áo bóng đá Inter Milan sân khách 2024/25",
     price: 120,
-    img: "/assets/img/outfits/clb/clb1.webp",
+    img: "/assets/img/outfits/clb/clb2.webp",
   },
   {
     id: 2,
     name: "Áo bóng đá Chelsea thứ 3 2024/25",
     price: 130,
-    img: "/assets/img/outfits/clb/clb2.webp",
+    img: "/assets/img/outfits/clb/clb10.webp",
   },
   {
     id: 3,
     name: "Áo bóng đá Manchester United Thứ 3 2024/25",
     price: 150,
-    img: "/assets/img/outfits/clb/clb3.webp",
+    img: "/assets/img/outfits/clb/clb5.webp",
   },
   {
     id: 4,
     name: "Áo bóng đá Arsenal sân khách 2024/25",
     price: 140,
-    img: "/assets/img/outfits/clb/clb4.webp",
+    img: "/assets/img/outfits/clb/clb3.webp",
   },
   {
     id: 5,
     name: "Áo bóng đá Arsenal thứ 3 2024/25",
     price: 140,
-    img: "/assets/img/outfits/clb/clb5.webp",
+    img: "/assets/img/outfits/clb/clb1.webp",
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ var products = [
     id: 10,
     name: "Áo tập luyện Real Madrid 2024/25",
     price: 140,
-    img: "/assets/img/outfits/clb/clb10.webp",
+    img: "/assets/img/outfits/clb/clb4.webp",
   },
 ];
 
@@ -184,36 +184,3 @@ document.body.addEventListener("click", function (event) {
 
 //   document.querySelector(".js-product-detail").innerHTML = renderDetail;
 // }
-
-//handlebtns
-function handleBtns() {
-  var btns = document.querySelectorAll(".js-btn-add-to-cart");
-  for (let i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function (event) {
-      var btnEl = event.target;
-      var productId = btnEl.dataset.id;
-      var product = products.find((product) => {
-        if (product.id == productId) {
-          return true;
-        } else {
-          return false;
-        }
-      });
-    });
-  }
-}
-
-//addtocart
-var cart = [];
-function addtocart(product) {
-  var item = {
-    id: product.id,
-    name: product.name,
-    price: product.price,
-    img: product.img,
-  };
-  cart.push(item);
-}
-
-//renderproductDetail
-function renderProductDetail(product) {}
