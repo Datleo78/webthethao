@@ -3,61 +3,61 @@ var products = [
     id: 1,
     name: "Áo bóng đá Inter Milan sân khách 2024/25",
     price: 120,
-    img: "/assets/img/outfits/clb/clb2.webp",
+    img: "assets/img/outfits/clb/clb2.webp",
   },
   {
     id: 2,
     name: "Áo bóng đá Chelsea thứ 3 2024/25",
     price: 130,
-    img: "/assets/img/outfits/clb/clb10.webp",
+    img: "assets/img/outfits/clb/clb10.webp",
   },
   {
     id: 3,
     name: "Áo bóng đá Manchester United Thứ 3 2024/25",
     price: 150,
-    img: "/assets/img/outfits/clb/clb5.webp",
+    img: "assets/img/outfits/clb/clb5.webp",
   },
   {
     id: 4,
     name: "Áo bóng đá Arsenal sân khách 2024/25",
     price: 140,
-    img: "/assets/img/outfits/clb/clb3.webp",
+    img: "assets/img/outfits/clb/clb3.webp",
   },
   {
     id: 5,
     name: "Áo bóng đá Arsenal thứ 3 2024/25",
     price: 140,
-    img: "/assets/img/outfits/clb/clb1.webp",
+    img: "assets/img/outfits/clb/clb1.webp",
   },
   {
     id: 6,
     name: "Áo bóng đá Real Madrid Sân Nhà 2024/25",
     price: 140,
-    img: "/assets/img/outfits/clb/clb6.webp",
+    img: "assets/img/outfits/clb/clb6.webp",
   },
   {
     id: 7,
     name: "Áo bóng đá Manchester United Sân Nhà 2024/25",
     price: 140,
-    img: "/assets/img/outfits/clb/clb7.webp",
+    img: "assets/img/outfits/clb/clb7.webp",
   },
   {
     id: 8,
     name: "Áo bóng đá Manchester United Sân Khách 2024/25",
     price: 140,
-    img: "/assets/img/outfits/clb/clb8.webp",
+    img: "assets/img/outfits/clb/clb8.webp",
   },
   {
     id: 9,
     name: "Áo bóng đá Manchester United Thứ 3 2024/25",
     price: 140,
-    img: "/assets/img/outfits/clb/clb9.webp",
+    img: "assets/img/outfits/clb/clb9.webp",
   },
   {
     id: 10,
     name: "Áo tập luyện Real Madrid 2024/25",
     price: 140,
-    img: "/assets/img/outfits/clb/clb4.webp",
+    img: "assets/img/outfits/clb/clb4.webp",
   },
 ];
 
@@ -107,23 +107,10 @@ $(document).ready(function () {
   renderProducts(products);
 });
 
-// const productDetail = document.querySelector(".js-product-detail");
-
-// // Hiển thị chi tiết sản phẩm
-// function showProductDetail() {
-//   productDetail.classList.add("open");
-// }
-
-// // Ẩn chi tiết sản phẩm
-// function hideProuductDetail() {
-//   productDetail.classList.remove("open");
-// }
-
 // Gán sự kiện cho phần tử cha (Event Delegation)
 document.body.addEventListener("click", function (event) {
   if (event.target.classList.contains("js-btn-add-to-cart")) {
     showProductDetail();
-    handleBtns();
     // handleBtns();
   }
 });
