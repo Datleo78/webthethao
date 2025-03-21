@@ -9,8 +9,8 @@
       rel="stylesheet"
       href="assets/fonts/themify-icons/themify-icons.css"
     />
-    <link rel="stylesheet" href="owl.carousel.min.css">
-    <link rel="stylesheet" href="owl.theme.default.min.css">
+    <link rel="stylesheet" href="WEBTHETHAO/owl.carousel.min.css">
+    <link rel="stylesheet" href="WEBTHETHAO/owl.theme.default.min.css">
   </head>
   <body>
     <!---------------header------------------->
@@ -574,26 +574,22 @@
     </div>
   </div>
     
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="owl.carousel.min.js"></script>
+    <script src="WEBTHETHAO/owl.carousel.min.js"></script>
     <script>
+     $(document).ready(function(){
       $('.owl-carousel').owlCarousel({
-      loop:true,
-      margin:10,
-      nav:true, 
-      responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:4
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: { items: 1 },
+          600: { items: 3 },
+          1000: { items: 4 }
         }
-    }
-})
+      });
+    }); 
     </script>
     <script src="product-list.js"></script>
   </body>
