@@ -385,6 +385,7 @@ ul {
 }
 .footer-content {
   justify-content: space-between;
+  padding: 24px;
 }
 .footer-content h3 {
   margin-bottom: 12px;
